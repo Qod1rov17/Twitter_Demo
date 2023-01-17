@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 using Twitter.Domain.Entities;
 
 namespace Twitter.Data.ProgramDbContext
@@ -7,11 +8,13 @@ namespace Twitter.Data.ProgramDbContext
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
-            Database.EnsureCreated();
+            
         }
 
         public virtual DbSet<User> Users { get;set; }
         public virtual DbSet<Post> Posts { get;set; }
+
+
 
     }
 }

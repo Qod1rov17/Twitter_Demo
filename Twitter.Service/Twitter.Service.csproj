@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Twitter.Data\Twitter.Data.csproj" />
+    <ProjectReference Include="..\Twitter.Domain\Twitter.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
