@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Twitter.Data.DbContext;
+using Twitter.Data.ProgramDbContext;
 
-namespace Twitter.Data.DbContext
+namespace Twitter.Data.ProgramDbContext
 {
 
 
