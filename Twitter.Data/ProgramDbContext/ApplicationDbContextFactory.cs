@@ -10,6 +10,9 @@ using Twitter.Data.DbContext;
 
 namespace Twitter.Data.DbContext
 {
+
+
+
     public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
     {
         public ApplicationDbContext CreateDbContext(string[] args)
@@ -20,7 +23,7 @@ namespace Twitter.Data.DbContext
             var config = builder.Build();
 
             var connectionString = config.GetConnectionString("DefaultConnection");
-
+            
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
             optionsBuilder = optionsBuilder.UseNpgsql(connectionString);
