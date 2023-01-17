@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Twitter.Domain.Entities
+namespace Twitter.Service.PostService
 {
-    internal class git
+    public class PostServie
     {
+
     }
 }
