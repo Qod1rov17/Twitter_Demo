@@ -12,6 +12,7 @@ namespace Twitter.Domain.Entities
         public string? Text { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set;}
-
+       
     }
+
 }
