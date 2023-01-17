@@ -16,17 +16,10 @@ namespace Twitter.Data.ProgramDbContext
     public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
     {
         public ApplicationDbContext CreateDbContext(string[] args)
-        {
-            var builder = new ConfigurationBuilder();
-            builder.SetBasePath(Directory.GetCurrentDirectory());
-            builder.AddJsonFile("appsettings.json");
-            var config = builder.Build();
-
-            var connectionString = config.GetConnectionString("DefaultConnection");
-            
+        {   
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-            optionsBuilder = optionsBuilder.UseNpgsql(connectionString);
+            optionsBuilder = optionsBuilder.UseNpgsql("Server=127.0.0.1;Port=5432;Database=Dars41;User Id=postgres;Password=helpmegod1!;");
             var options = optionsBuilder.Options;
 
             return new ApplicationDbContext(options);
