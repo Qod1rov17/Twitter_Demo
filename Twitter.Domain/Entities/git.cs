@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Twitter.Domain.Enums
+namespace Twitter.Domain.Entities
 {
-    public enum Gender
+    internal class git
     {
-        Male,
-        Female,
-        other
     }
 }
