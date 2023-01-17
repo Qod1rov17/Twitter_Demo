@@ -9,7 +9,7 @@ using Twitter.Data.ProgramDbContext;
 using Twitter.Domain.Entities;
 using Twitter.Domain.Enums;
 
-namespace Twitter.Service
+namespace Twitter.Service.UserServices
 {
     public class RegistrationService
     {
